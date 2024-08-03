@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>175</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BMI CALCULATOR</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+   background-color: #5A639C;
+}
+
+QLabel,
+QPushButton{
+     color:  #E2BBE9;
+     font-size: 18pt;
+}
+
+
+QSlider::handle:horizontal{
+   background-color:  #E8C5E5; 
+   border-radius: 12px;
+   width: 25px;
+}
+
+QSlider::groove:horizontal{
+   height: 5px;
+}
+
+QPushButton{
+   background-color: #7776B3;
+   border: none; 
+   border-radius: 10px; 
+   padding: 5px;
+}
+
+QPushButton:hover{
+  background-color: #9B86BD;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="title_label">
+      <property name="font">
+       <font>
+        <family>Academy Engraved LET</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>BMI CALCULATOR</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="height_layout">
+      <item>
+       <widget class="QSlider" name="height_slider">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="height_label">
+        <property name="font">
+         <font>
+          <family>Academy Engraved LET</family>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>M</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="weight_layout">
+      <item>
+       <widget class="QSlider" name="weight_slider">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="weight_label">
+        <property name="font">
+         <font>
+          <family>Academy Engraved LET</family>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>KG</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="calculate_button">
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
